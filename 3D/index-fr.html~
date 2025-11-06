@@ -1,0 +1,88 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>
+Some work in 3D
+  </title>
+</head>
+<body TEXT="#505000" BGCOLOR="#FFFFFF">
+
+  <font face=helvetica>
+
+<center>
+  <font color="#0000FF" size="20">Some work in 3D</font>
+
+  <br>
+  
+     (<a href="index-fr.html">version française</a>)
+ 
+<br>
+
+</center>
+
+<p>I have been interested in 3D since the 1980s.
+  This page illustrates some of the works I have done,
+  but is in no way meant to be exhaustive. I have been conducting
+  many experiments, most of which have never been published.
+  Some of them might be published some day.
+
+<p>Here are some noteworthy results:
+
+  <ul>
+    <li>In 2020, I have spent about 500 hours constructing a <a href="https://sites.google.com/view/horlogenotredame">3D model
+      for the destroyed clock at the Paris Notre Dame cathedral</a>.
+      This model was based on a few measurements I took in 2016 when
+      I was lucky to examine the clock (something no one else seems to
+      have done, not even clockmakers), as well as photographs.
+      There was a very long, complex, and in particular computational
+      process, and making this model was obviously much more complex
+      than merely measuring parts and transcribing them in some CAD software.
+      As far as I know, this is the first time that a clock has been
+      modelled that way. All known tower clocks modelled in 3D,
+      for instance in the <a href="https://www.chronospedia.com">Chronospédia project</a>,
+      have been based on either
+      direct measurements of parts, or 3D scanning.
+    <li>The 3D model of the Paris Notre Dame clock was put online
+      in 2020 in <a href="https://github.com/roegeld/notredame">several
+	open formats</a>, including STEP files.
+      Noteworthy is the fact that the various parts of the clock
+      have been made available separately, and in such a way that
+      they can be reassembled by any decent software.
+      This was the first time, to my knowledge, that such a model has
+      been made available in such formats. This is still not done today (2025)
+      by other projects such as the <a href="https://www.chronospedia.com">Chronospédia project</a>.
+    <li>In 2021, I have made some animations based on my 3D model,
+      and in particular <a href="https://www.youtube.com/@horlogenotredame">animations showing the remontoire</a>.
+      This was, to my knowledge, the first time that such a remontoire
+      had been animated. The entire animation is computed,
+      there no such use of ``physical dynamics'' which makes it
+      possible for some CAD users to easily obtain such animations.
+
+    <li>In 2021, I also made an Android application (see <a href="https://apkcombo.com/ar/paris-notre-dame-clock/com.RoegelSoftware.NDPClock">apkcombo</a>,
+	  <a href="https://apkpure.com/paris-notre-dame-clock/com.RoegelSoftware.NDPClock">apkpure</a>,
+	  <a href="https://steprimo.com/android/en/app/com.RoegelSoftware.NDPClock">steprimo</a>,
+	  or <a href="https://apkgk.com/es/com.RoegelSoftware.NDPClock">apkgk</a>) which enables
+      the exploration of the 3D model, as well as the selection
+      of parts, the display of metadata (gear counts), and the animation
+      of the going work. As far as I know, this had never been made before,
+      and is also still not done by the <a href="https://www.chronospedia.com">Chronospédia project</a>,
+      at least as of 2025.
+    <li>Still in 2021, I had a group of students work on a 1/3 scale model
+      of the clock.
+    <li>In 2022, I made <a href="https://124d566b-1a13-49a2-bac5-75552e386ac9.filesusr.com/ugd/d89ba0_af4c971e362f44f6804b43952c12edce.pdf">some experiments of Augmented Reality with
+      a Microsoft Hololens headset</a>.
+    <li>In January 2025, I have finally made a glTF version of my 3D model
+      of the clock, which makes it possible to <a href="https://horloges.github.io/3D/notredame.html">explore the clock interactively</a>
+      and on any platform. This viewer goes beyond those provided (in 2025)
+      by the <a href="https://www.chronospedia.com">Chronospédia project</a>
+      in that it does for the first time provide interactive
+      exploration, some animation (only a minimal motion as a proof
+      of concept) and the display of metadata.
+  </ul>
+  
+<p>Last change: 6 November 2025.
+    
+</body>
+</html>
