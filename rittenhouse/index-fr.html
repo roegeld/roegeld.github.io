@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>La modélisation en 3D des planétaires de David Rittenhouse</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+  th {
+    background-color: #d6d6d6;
+  }
+
+
+.container {
+display: flex;
+justify-content: center;
+align-items: flex-start;
+gap: 20px;
+}
+
+.container figure {
+margin: 0;
+text-align: center;
+}
+
+.container img {
+width: auto;
+display: block;
+}
+
+.images-500 img {
+height: 500px;
+}
+
+.images-300 img {
+height: 300px;
+}
+
+.box {
+flex: 0 1 auto;
+}
+
+figure {
+margin: 0;
+text-align: center;
+}
+
+figure img {
+height: 400px; /* même hauteur pour les deux images /
+width: auto; / conserve les proportions */
+display: block;
+}
+
+figcaption {
+margin-top: 8px;
+}
+
+.single-figure {
+margin: 20px auto;
+text-align: center;
+}
+
+.single-figure img {
+display: block;
+margin: 0 auto;
+}
+</style>
+
+
+<body>
+
+<header>
+    <h1>La modélisation en 3D des planétaires de David Rittenhouse</h1>
+</header>
+
+<em>Denis Roegel</em>
+
+<center>
+<a href="index.html">English version</a>
+</center>
+
+
+<main>
+
+<section id="introduction">
+
+
+<h2>Introduction</h2>
+
+
+<p>
+<a href="https://fr.wikipedia.org/wiki/David_Rittenhouse">David Rittenhouse</a> (1732–1796) est l'un des grands scientifiques de l'Amérique coloniale, surpassé seulement par <a href="https://fr.wikipedia.org/wiki/Benjamin_Franklin">Benjamin Franklin</a>, et pourtant il reste peu connu du grand public. À Philadelphie, son nom est principalement associé à <a href="https://fr.wikipedia.org/wiki/Rittenhouse_Square">Rittenhouse Square</a>, qui porte ce nom depuis 1825.
+
+<p>Rittenhouse est né à <a href="https://fr.wikipedia.org/wiki/Germantown_(Philadelphie)">Germantown</a> — aujourd'hui un quartier de Philadelphie — au sein d'une famille d'immigrants allemands. Il est devenu un fabricant d'instruments, un astronome et un inventeur renommé. En 1769, il a observé le <a href="https://fr.wikipedia.org/wiki/Transit_de_V%C3%A9nus">transit de Vénus</a> devant le Soleil à l'aide de ses propres instruments. 
+Dans les années 1790, il a publié plusieurs <a href="https://mathshistory.st-andrews.ac.uk/Biographies/Rittenhouse/">articles scientifiques</a>. Il fut le deuxième président de l'<a href="https://fr.wikipedia.org/wiki/Soci%C3%A9t%C3%A9_am%C3%A9ricaine_de_philosophie">American Philosophical Society</a>, fondée par Franklin et d'autres en 1743.
+De 1792 à 1795, il a occupé le poste de premier directeur de l'<a href="https://fr.wikipedia.org/wiki/United_States_Mint">United States Mint</a> (l'hôtel des monnaies des États-Unis). Rittenhouse était très estimé par <a href="https://fr.wikipedia.org/wiki/Thomas_Jefferson">Thomas Jefferson</a>, qui a écrit&nbsp;:
+
+<blockquote>
+<em>Nous considérons M. Rittenhouse comme l'égal de tout astronome vivant&nbsp;:
+et comme le premier par le génie, puisqu'il est autodidacte. 
+En tant qu'artisan, il a fait preuve d'un génie mécanique
+  aussi grand que tout ce que le monde a jamais produit.
+  Il n'a certes pas créé un monde&nbsp;; 
+mais, par l'imitation, il s'est rapproché davantage de son Créateur que tout autre homme
+ayant vécu depuis la Création jusqu'à ce jour.</em> (<a href="https://books.google.fr/books?id=NDo_AAAAYAAJ&pg=PA98">Notes sur la Virginie</a>, 1781)
+</blockquote>
+
+</p>
+
+<figure class="single-figure">
+<img src="img/rittenhouse-peale.jpg"
+alt="Portrait de David Rittenhouse par Charles Willson Peale">
+<figcaption>
+David Rittenhouse, peint par Charles Willson Peale en 1796 (Wikipédia). 
+</figcaption>
+</figure>
+
+</section>
+
+<section id="orrery">
+
+<h2>Les planétaires</h2>
+
+<p>Parmi ses nombreuses réalisations, Rittenhouse a construit plusieurs horloges
+  ainsi que deux planétaires complexes, appelés ``orrery'' en anglais.
+  Un planétaire est une représentation mécanique
+du système solaire&nbsp;; il doit son nom anglais au fait que l'un des premiers modèles de ce type
+fut fabriqué pour <a href="https://fr.wikipedia.org/wiki/Charles_Boyle">Charles Boyle, 4e comte d'Orrery</a>, vers 1713.
+Le premier des planétaires de Rittenhouse
+fut construit entre 1767 et 1771 et vendu à l'université de Princeton,
+alors appelée <a href="https://fr.wikipedia.org/wiki/Universit%C3%A9_de_Princeton">College of New Jersey</a>.
+
+<figure class="single-figure">
+<img src="img/dr230-5x.jpg"
+alt="Vue du planétaire de Princeton.">
+<figcaption>
+Vue du planétaire de Princeton. 
+</figcaption>
+</figure>
+
+
+<p>Un second planétaire, plus complet, fut réalisé en 1770-1771 pour le <a href="https://en.wikipedia.org/wiki/Academy_and_College_of_Philadelphia">College of Philadelphia</a> (aujourd'hui intégré à l'université de Philadelphie) en compensation du planétaire de Princeton que Philadelphie espérait acquérir. 
+Ces deux planétaires sont disposés dans un plan
+vertical, alors que la plupart des planétaires présentent les orbites des planètes
+sur un plan horizontal. <div class="container images-300">
+<div class="box">
+<figure>
+<img src="img/dr232-05x.jpg"
+alt= "Détail du bras de Saturne à Philadelphie">
+<figcaption>Détail du bras de Saturne à Philadelphie.</figcaption>
+</figure>
+</div>
+<div class="box">
+<figure>
+<img src="img/dr232-21x.jpg"
+alt= "Détail du panneau lunaire">
+<figcaption>Détail du panneau lunaire.</figcaption>
+</figure>
+</div>
+</div>
+
+<p>Bien que les deux planétaires soient similaires, celui de Philadelphie comporte un panneau supplémentaire pour le mouvement de la Lune et possédait peut-être un troisième panneau pour les mouvements des satellites de Jupiter et de Saturne. 
+En ce sens, Rittenhouse a en réalité construit plus qu'un simple planétaire, car le panneau lunaire constitue une partie entièrement distincte. Par souci de commodité, je continuerai toutefois à désigner les réalisations de Rittenhouse sous le terme de «&nbsp;planétaires&nbsp;», même lorsqu'elles dépassent le cadre d'un simple planétaire. 
+Le planétaire de Princeton a peut-être lui aussi comporté des panneaux supplémentaires, mais, si tel a été le cas, ils ont été perdus.
+
+<p>Les planétaires de Rittenhouse sont d'une grande complexité et les deux instruments ont connu des sorts différents. Celui de Philadelphie est resté pratiquement dans son état d'origine, tandis que celui de Princeton a été réparé dans les années 1950 et, malheureusement, équipé de moteurs électriques. À ce jour, aucun de ces instruments n'a fait l'objet d'une description détaillée, bien qu'ils aient tous deux été restaurés. Rittenhouse lui-même n'a publié qu'une brève description de son projet de planétaire dans le <a href="https://www.biodiversitylibrary.org/item/80933#page/31/mode/1up">premier volume des Transactions of the American Philosophical Society</a>,
+et ni le <a href="https://books.google.tg/books?id=Zwr600rQohkC">mémoire</a> de William Barton (1813),
+ni les biographies d'<a href="https://ui.adsabs.harvard.edu/scan/manifest/1946JRASC..40..265C">Edward Ford</a> (1946) et
+de Brooke Hindle (1964) ne fournissent beaucoup de détails techniques sur ces planétaires. 
+La monographie récente (2023) de <a href="https://www.amazon.fr/David-Rittenhouse-Philosopher-mechanick-Colonial-Philadelphia/dp/0300272952">Donald L. Fennimore et Frank L. Hohmann</a> traite en détail, pour la première fois, des horloges de Rittenhouse,
+mais ne consacre que quelques pages aux planétaires. 
+Même l'ouvrage d'Howard C. Rice Jr., publié au moment de la restauration du planétaire de Princeton (1954), ne livre à leur sujet que des informations historiques très générales.
+
+
+  <section id="complexity">
+
+<h2>De la complexité des planétaires</h2>
+
+<p>Comme je l'ai dit, les planétaires de Rittenhouse sont des machines très complexes,
+mais leur complexité ne réside ni dans la quantité d'informations affichées
+ni dans le nombre de pièces. 
+Certaines horloges possèdent des dizaines de «&nbsp;complications&nbsp;», des dizaines de cadrans, etc.,
+et pourtant, à mon sens, elles ne sont pas particulièrement complexes. Presque toutes
+les montres sont, par exemple, relativement simples à comprendre,
+voire à dessiner, y compris celles
+dotées de fonctions de répétition ou de tourbillons, en grande partie parce que
+leurs axes sont tous parallèles. On rencontre rarement
+une fonction difficile à comprendre ou même à construire. 
+Un cadran indiquant le temps sidéral ou les heures de lever et de coucher du soleil
+constitue, par exemple, une fonctionnalité généralement élémentaire. 
+Parfois, la prouesse consiste à intégrer de nombreuses fonctions dans un espace restreint,
+mais les fonctions elles-mêmes peuvent être faciles à comprendre et même à construire. 
+Parfois aussi, la difficulté réside dans l'explication du fonctionnement d'un mécanisme,
+et nombre de mécanismes manquent d'explications adéquates. Cela ne
+signifie pas pour autant qu'ils sont intrinsèquement difficiles à comprendre.
+
+<p>Je pense plutôt qu'il convient de distinguer différents types de
+complexité. De meilleurs indicateurs de complexité, au-delà du nombre de pièces
+ou de fonctions, sont la <em>difficulté à comprendre</em> un mécanisme
+et la <em>difficulté à le reconstruire</em>,
+que ce soit à l'aide de machines ou en 3D. Or, d'après mon expérience, on trouve rarement
+un mécanisme qui soit à la fois difficile à comprendre
+et difficile à reconstruire. 
+Un mécanisme peut avoir été difficile à construire (et peut-être à reconstruire),
+tout en restant (relativement) facile à comprendre. 
+Bien entendu, il faut aussi prendre en compte la difficulté initiale
+de conception du mécanisme pour une tâche donnée, tant au niveau de ses
+fonctions que de sa disposition. Prenons par exemple
+<a href="https://fr.wikipedia.org/wiki/Mod%C3%A8le_de_comput_de_Schwilgu%C3%A9">le comput ecclésiastique de Schwilgué</a>&nbsp;: il est très ingénieux,
+tout en restant (relativement) facile à comprendre. 
+Bien que la conception d'un mécanisme puisse s'avérer ardue,
+sa modélisation est généralement plus aisée&nbsp;; toutefois, réaliser un modèle pertinent
+permet de mieux comprendre la conception initiale et le cheminement intellectuel suivi,
+ce qui peut également représenter un défi si l'on vise une telle compréhension. 
+Appréhender un mécanisme peut aussi s'avérer complexe
+lorsque l'on tente d'en analyser les propriétés d'un point de vue mathématique. 
+Enfin, il faut également prendre en compte la complexité liée au réglage du mécanisme. 
+En somme, la question de la complexité est, elle aussi, loin d'être simple. 
+À cela s'ajoute le fait que certains mécanismes ont été conçus
+après une longue réflexion préalable, tandis que d'autres ont été
+presque improvisés, bien qu'avec génie. Cette improvisation
+accroît encore la complexité de leur (re)construction.
+
+<p>Ce sont précisément ces caractéristiques que l'on retrouve dans les planétaires de Rittenhouse. 
+Ils sont difficiles à comprendre, en particulier le panneau lunaire,
+qui constitue en soi un chef-d'œuvre unique en son genre. 
+Les planétaires de Rittenhouse sont difficiles à (re)construire,
+que ce soit mécaniquement ou en 3D,
+car ils ont été, dans une certaine mesure, improvisés. 
+Bien que les panneaux dédiés aux planètes soient (relativement) faciles à comprendre,
+leur complexité réside d'abord dans les choix opérés par Rittenhouse
+pour tenter de reproduire fidèlement les mouvements planétaires — avec des orbites
+excentriques et inclinées, des roues aux dents inégalement espacées, etc. —
+et ensuite dans le fait que leur conception
+  n'est pas aussi rationnelle que celle de nombreux autres planétaires.
+  En analysant ces planétaires, on devine que Rittenhouse a dû surmonter des obstacles
+et trouver des solutions au fil de son travail, des solutions
+qu'il n'avait pas envisagées au départ. Par ailleurs, le réglage
+de ces planétaires est une tâche complexe.
+
+<p>Cela rend les planétaires de Rittenhouse intrinsèquement plus complexes — et plus complexes à modéliser — que les célèbres horloges astronomiques telles que celles de <a href="https://en.wikipedia.org/wiki/Strasbourg_astronomical_clock">Strasbourg</a> (que je connais très bien), de <a href="https://en.wikipedia.org/wiki/Besan%C3%A7on_astronomical_clock">Besançon</a>, de <a href="https://en.wikipedia.org/wiki/Beauvais_astronomical_clock">Beauvais</a>, etc., ainsi que les horloges plus récentes&nbsp;; il s'agit, pour la plupart, d'œuvres d'ingénierie, bien conçues et nullement improvisées. J'estime également que les planétaires de Rittenhouse sont plus complexes à modéliser que la plupart des autres mécanismes de ce type, car ces derniers ne présentent généralement pas autant de particularités techniques, telles que des roues inclinées, une denture irrégulière, etc.
+Certains planétaires de <a href="https://en.wikipedia.org/wiki/Philipp_Matth%C3%A4us_Hahn">Hahn</a> ou de <a href="https://www.archinform.net/arch/38360.htm">Neßtfell</a> possèdent bien des roues inclinées, mais pas de denture irrégulière. Hahn et Neßtfell ont également eu recours à des engrenages épicycloïdaux, mais leur modélisation ne présente pas de difficulté particulière. 
+Peut-être que les horloges de <a href="https://de.wikipedia.org/wiki/Ebert_Baldewein">Baldewein</a>
+ou d' <a href="https://de.wikipedia.org/wiki/Philipp_Imsser">Imsser</a> présentent aussi de telles caractéristiques, mais elles ne comportent pas autant de pièces. 
+Il est possible que le planétaire de <a href="https://chsi.emuseum.com/objects/2186/grand-orrery">Joseph Pope</a> conservé à Harvard soit également doté de roues inclinées, mais je n'en suis pas certain. 
+Quoi qu'il en soit, lorsque la seule caractéristique «&nbsp;complexe&nbsp;» d'une horloge astronomique réside dans le nombre de ses pièces — comme c'est le cas, par exemple, pour l'horloge astronomique de Beauvais —, ce nombre ne complique pas véritablement l'étude ou la conception de l'instrument&nbsp;; il ne fait qu'en allonger la durée.
+
+<p>Pour toutes ces raisons, je considère les planétaires de Rittenhouse comme les mécanismes astronomiques les plus complexes de l'Amérique coloniale, et peut-être même comme les plus complexes
+antérieurs au XXe siècle. Il faut donc se réjouir
+que ces deux planétaires, et tout particulièrement celui de Philadelphie,
+aient été préservés.
+
+</section>
+
+
+<section id="3dmodels">
+
+<h2>Les modèles 3D</h2>
+
+<p>Le planétaire de Philadelphie, conservé au <a href="https://en.wikipedia.org/wiki/Van_Pelt_Library">Van Pelt-Dietrich Library Center</a>, a été pour la première fois entièrement analysé et modélisé en 3D, à l'exception de petits éléments tels que les vis et quelques autres détails. Le résultat dépasse tout ce que l'on pouvait imaginer&nbsp;; il s'agit probablement du modèle 3D le plus complexe jamais réalisé pour un mécanisme astronomique de ce type. Ou plutôt des modèles les plus complexes, car deux modèles distincts ont été créés&nbsp;: l'un pour le panneau des planètes et l'autre pour le panneau lunaire. Ces modèles sont fidèles au planétaire de Philadelphie, notamment en ce qui concerne la structure, le nombre de dents des roues et la cinématique. De plus, ils sont uniques en ce qu'ils ont été réalisés selon une approche algébrique-géométrique pérenne, contrairement à la plupart des modèles 3D d'horloges.
+
+<p>Ces deux modèles sont le fruit d'un long processus s'étalant sur plus de vingt ans. J'ai entendu parler pour la première fois des planétaires de Rittenhouse fin 2002 et j'ai commencé à y travailler sérieusement au cours des premiers mois de 2003. Je me suis ensuite rendu à Princeton et à Philadelphie en 2004 pour examiner directement les planétaires de Rittenhouse. C'est également à cette époque que j'ai réalisé une première modélisation 3D rudimentaire du panneau des planètes, la partie centrale du planétaire de Philadelphie. Toutefois, ce n'est qu'en 2019 que j'ai travaillé sérieusement sur le panneau lunaire — situé à droite du panneau des planètes — et que j'en ai réalisé un modèle 3D abouti. Par ailleurs, ce modèle m'a permis de mettre au point des techniques que j'ai ensuite utilisées pour le <a href="https://horloges.github.io/3D/notredame.html">modèle 3D de l'horloge de Notre-Dame de Paris, réalisé en 2020</a>. (Ce modèle est disponible pour une utilisation dans n'importe quel logiciel de CAO <a href="https://github.com/roegeld/notredame">ici</a>.)
+Enfin, en 2025-2026, j'ai retravaillé sur le panneau des planètes
+du planétaire de Rittenhouse
+et je l'ai mis au même niveau de détail que le panneau lunaire. Cela clôt un projet entamé
+23 ans plus tôt.
+
+<p>Je n'ai pas connaissance de modèles similaires réalisés pour d'autres planétaires complexes.
+Le planétaire de <a href="https://chsi.emuseum.com/objects/2186/grand-orrery">Pope</a> à Harvard,
+les grands planétaires d'<a href="https://en.wikipedia.org/wiki/George_Adams_(scientist,_died_1772)">Adams</a>,
+ceux de <a href="https://en.wikipedia.org/wiki/Philipp_Matth%C3%A4us_Hahn">Hahn</a>
+et d'autres <a href="https://roegeld.github.io/oechslin">modèles similaires</a>
+n'ont pas encore été modélisés.
+À mon avis, les seuls modèles 3D pouvant être comparés
+à ceux que j'ai réalisés
+sont ceux de l'<a href="https://www.ochsundjunior.swiss/the-tuerler-clock/">horloge Türler</a>
+(initialement à Zurich et désormais à La Chaux-de-Fonds), conçue dans les années 1990,
+et le <a href="https://www.inventive-studio.com/3d-video-mediation-numerique/lhorloge-astronomique">modèle 3D partiel
+réalisé pour l'horloge astronomique de Strasbourg</a> en 2017. Ces deux horloges présentent en réalité
+une conception très moderne et reposent sur des plans&nbsp;; elles ne comportent
+quasiment aucun élément complexe tel que des orbites inclinées (à l'exception d'un seul cas pour l'horloge de Strasbourg),
+des dentures irrégulières, etc.
+Le modèle 3D de la première a été réalisé à partir des plans
+et ne couvre probablement pas tous les détails. Dans le cas de l'horloge de Strasbourg,
+le modèle est partiel et a été réalisé pour un film&nbsp;; seules certaines parties de l'horloge
+ont été modélisées et, dans certains cas, le modèle est loin
+d'être fidèle, bien que la plupart des gens ne le remarquent pas. Il est également évident que
+les concepteurs des modèles avaient une tâche plus simple et pouvaient utiliser
+les dimensions des objets réels, ce qui n'était pas possible
+pour les planétaires de Rittenhouse. D'où le choix de l'approche algébrique. 
+Toutefois, même lorsque l'on dispose des dimensions, il vaut mieux privilégier une approche algébrique&nbsp;:
+elle est plus flexible, plus abstraite et plus pérenne
+qu'une simple approche «&nbsp;à plat&nbsp;». Mais elle est aussi beaucoup plus difficile
+et chronophage.
+
+<div class="container images-500">
+<div class="box">
+<figure>
+<img src="img/planet-panel.jpg"
+alt= "Vue d'ensemble du panneau des planètes">
+<figcaption>Vue d'ensemble du panneau des planètes (couleurs aléatoires).</figcaption>
+</figure>
+</div>
+<div class="box">
+<figure>
+<img src="img/lunar-panel.jpg"
+alt= "Vue d'ensemble du panneau lunaire">
+<figcaption>Vue d'ensemble du panneau lunaire.</figcaption>
+</figure>
+</div>
+</div>
+
+
+<figure class="single-figure">
+<img src="img/saturn-system.jpg"
+alt="Détail du système de Saturne et de ses satellites">
+<figcaption>
+Détail du système de Saturne et de ses satellites (couleurs aléatoires). 
+</figcaption>
+</figure>
+
+<figure class="single-figure">
+<img src="img/tilted-wheels.jpg"
+alt="Aperçu des roues inclinées.">
+<figcaption>
+Aperçu des roues inclinées (couleurs aléatoires). 
+</figcaption>
+</figure>
+
+
+</section>
+
+<section id="projects">
+
+<h2>Mes projets...</h2>
+
+<p>Mon objectif est désormais de développer les modèles 3D que j'ai réalisés (le panneau planétaire et le panneau lunaire)
+et de les utiliser pour décrire en détail la construction et le fonctionnement
+du planétaire de Philadelphie. J'espère également pouvoir rendre ces modèles 3D
+accessibles au public un jour. Cela pourrait toutefois prendre du temps,
+car je travaille sur de nombreux autres projets et parce que les planétaires
+de Rittenhouse sont particulièrement complexes.
+
+<p>Quant au planétaire de Princeton, il était très similaire
+au panneau planétaire de celui de Philadelphie mais a subi des modifications&nbsp;;
+il semble possible, en s'appuyant sur le planétaire de Princeton restauré
+ainsi que sur les engrenages remplacés (qui ont été conservés), d'établir un relevé plus
+précis des différences entre les deux instruments.
+
+<h2>... et une incitation pour d'autres</h2>
+
+<p>Mais bien entendu, j'espère que mon travail incitera également
+d'autres personnes à réaliser des modèles 3D des grands planétaires et
+horloges astronomiques mentionnés plus haut. 
+Il convient toutefois d'apporter quelques nuances. 
+
+<ul>
+<li><p>Il faut d'abord comprendre quelle est l'utilité réelle
+d'un modèle 3D. Très souvent, comme je l'ai écrit par ailleurs
+(«&nbsp;Delvart’s astronomical clock (1849) --- An analysis of its orrery&nbsp;»,
+<em>Horological Science Newsletter (NAWCC Chapter 161)</em>,
+2024, n° 2, p. 2-42),
+un modèle 3D n'est pas absolument nécessaire pour comprendre le fonctionnement
+d'une horloge, ni même de nombreux planétaires. Le nombre de mécanismes
+tirant un réel profit d'un modèle 3D est restreint, mais les planétaires
+de Rittenhouse — en raison de leur grande complexité
+et de leur accessibilité limitée — en font partie. 
+
+<p>Même si un modèle 3D n'est pas indispensable à la
+compréhension de l'objet réel,
+il peut néanmoins être considéré comme une œuvre d'art
+et être apprécié indépendamment de sa finalité technique. 
+
+<li>Le deuxième aspect fondamental concerne l'exhaustivité
+et la pérennité. 
+Certains semblent penser qu'un modèle 3D se suffit à lui-même
+et qu'en manipulant le modèle 3D d'une horloge
+ou d'un mécanisme, on en comprend
+le fonctionnement, la construction, etc. Or, ce n'est pas le cas. 
+  Un modèle 3D ne constitue qu'une infime partie d'une conception.
+  Je renvoie à ce sujet
+  à mon <a href="docs/roegel2026guide-3d.pdf">article</a>
+  sur la pérennité des modèles 3D.
+  Un modèle 3D peut
+servir d'outil explicatif, mais ne suffit pas à expliquer l'objet par lui-même. 
+De plus, un modèle 3D ne révèle ni son mode de fabrication,
+ni les raisons de tel ou tel choix de conception, ni sa date de création, etc.
+À cet égard, la plupart des modèles 3D sont incomplets et non pérennes. 
+
+</ul>
+
+<p>À mon sens, si l'on souhaite modéliser un planétaire en 3D,
+il convient d'abord de constituer un comité chargé de définir un protocole
+de conception, à l'instar d'un protocole de restauration. 
+Ce serait une erreur de se lancer tête baissée dans l'utilisation de logiciels
+tels que SolidWorks, Inventor, Rhino, etc., car l'essentiel ne réside pas uniquement
+dans le modèle 3D lui-même, mais aussi dans le processus de création,
+la réutilisabilité et le niveau d'abstraction du modèle. Mesurer les pièces d'un mécanisme démonté
+et en saisir les dimensions dans un logiciel de CAO est chose aisée, mais cela ne permet pas
+d'obtenir un modèle 3D de haut niveau. Un tel modèle manquerait
+de pérennité en raison de sa rigidité. 
+En réalité, la plupart des modèles 3D d'horloges que j'ai pu observer comportent des erreurs&nbsp;;
+or, comment corriger ces erreurs si le modèle n'est pas conçu selon une approche de haut niveau&nbsp;?
+
+<p>Un modèle 3D de haut niveau doit intégrer une dimension abstraite,
+envisager le mécanisme comme un assemblage flexible de géométries
+et fournir des informations de haut niveau sur les mouvements, etc.
+Cela implique que la conception repose sur des paramètres,
+et que les positions et les mouvements soient calculés et maîtrisés par l'humain,
+plutôt que laissés au bon vouloir du logiciel, notamment pour ce qui est
+des animations. Cela signifie également
+que le modèle CAO doit non seulement être ouvert et disponible dans des formats
+d'échange, mais que sa construction doit aussi pouvoir être reproduite. Il convient de savoir exactement comment un modèle a été construit, pourquoi, quand et par qui. En somme, un modèle devrait s'accompagner d'une documentation — une sorte de «&nbsp;making-of&nbsp;» — qui aille bien au-delà des simples fichiers de CAO. C'est là un défi de taille pour quiconque souhaitera modéliser les grands planétaires du passé.
+
+<p><i>Dernière mise à jour&nbsp: D.&nbsp;Roegel, 16 septembre 2026</i>
+
+</p><p>Retour à la <a href="https://roegeld.github.io">page principale</a>.
+
+</body>
+
+</html>
+
